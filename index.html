@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body >
+    <div class="content h-[100vh] w-full  pb-2  bg-blue-400 md:pt-10">
+        <!-- NAV START -->
+        <nav class="navbar flex justify-between px-8 md:hidden   items-center bg-[#00664b] h-24 w-full">
+            <h2 class="text-white font-mono text-2xl">Joseph Coats</h2>
+            <div class="hamburger h-11 w-11 cursor-pointer border-white rounded-md border-2 flex flex-col items-center justify-evenly">
+                <div class="bg-white h-[3px] w-6"></div>
+                <div class="bg-white h-[3px] w-7"></div>
+                <div class="bg-white h-[3px] w-6"></div>
+            </div>
+        </nav>
+        <!-- NAV END -->
+        <!-- HIDDEN MENU  START-->
+        <div class="theMenu absolute hidden  flex-col mr-1  w-64 pb-7 bg-[#034735] rounded-b-lg right-0 text-white">
+            <div class="about flex items-center hover:bg-slate-400 cursor-pointer bg-blue-500 rounded-lg m-4 p-1 justify-center">
+                <img class="h-4 w-4 mr-2" src="./assets/white.png" alt="circle">
+                <p>About</p>
+            </div>
+            <div class="project flex items-center hover:bg-slate-400 cursor-pointer bg-[#0294ab] rounded-lg m-4 p-1 justify-center">
+                <img class="h-4 w-4 mr-2" src="./assets/port.png" alt="port">
+                <p>Projects</p>
+            </div>
+            <div class="resume flex items-center hover:bg-slate-400 cursor-pointer bg-[#0294ab] rounded-lg m-4 p-1 justify-center">
+                <img class="h-4 w-4 mr-2" src="./assets/resume.png" alt="resume">
+                <p>Resume </p>
+            </div>
+            <div class="contact flex items-center hover:bg-slate-400 cursor-pointer bg-[#0294ab] rounded-lg m-4 p-1 justify-center">
+                <img class="h-4 w-4 mr-2" src="./assets/contact.png" alt="contact">
+                <p>Contact</p>
+            </div>
+            <a  href="https://www.youtube.com/@JoeTheCoderYT"><div class="youtube flex items-center hover:bg-slate-400 cursor-pointer bg-[#0294ab] rounded-lg m-4 p-1 justify-center">
+                <img class="h-4 w-5 mr-2" src="./assets/youtube.png" alt="youtube">
+                <p>Youtube</p>
+            </div></a>
+            <hr class="mt-4 w-[90%]  m-3">
+            <div class="socials flex justify-evenly">
+                <a href="https://github.com/polojoe1"><img src="./assets/github.png" class="h-10"  alt=""></a>
+                <a href="https://www.linkedin.com/in/josephcoats501/"><img src="./assets/linkedin.png" class="h-10"  alt=""></a>
+            </div>
+        </div>
+        <!-- HIDDEN MENU END -->
+        <!-- PANEL START -->
+        <div class="full-panel hidden fixed bg-[#00664b] pb-8 rounded-xl w-[285px] ml-3 mt-2 md:flex flex-col">
+            
+            <div class="profileName mt-8 flex flex-col justify-around px-2 items-center">
+                <img class="poloJoe h-[200px] border-8 border-[#0294ab] w-[200px] rounded-full " src="./assets/joeClose.jpg" alt="Joseph">
+                <div class="flex flex-col text-center">
+                    
+                    <h4 class="text-white text-2xl">Joseph Coats</h4>
+                </div>
+                
+            </div>
+            <hr class="mt-4 w-[90%]  m-3">
+            <div class="links flex flex-col text-white font-mono text-lg font-medium mx-3 my-1">
+                <div class="about flex items-center hover:bg-slate-400 cursor-pointer bg-blue-500 rounded-lg m-1 p-1 justify-center">
+                    <img class="h-4 w-4 mr-2" src="./assets/white.png" alt="circle">
+                    <p>About</p>
+                </div>
+                <div class="project flex items-center hover:bg-slate-400 cursor-pointer bg-[#0294ab] rounded-lg m-1 p-1 justify-center">
+                    <img class="h-4 w-4 mr-2" src="./assets/port.png" alt="port">
+                    <p>Projects</p>
+                </div>
+                <div class="resume flex items-center hover:bg-slate-400 cursor-pointer bg-[#0294ab] rounded-lg m-1 p-1 justify-center">
+                    <img class="h-4 w-4 mr-2" src="./assets/resume.png" alt="resume">
+                    <p>Resume </p>
+                </div>
+                <div class="contact flex items-center hover:bg-slate-400 cursor-pointer bg-[#0294ab] rounded-lg m-1 p-1 justify-center">
+                    <img class="h-4 w-4 mr-2" src="./assets/contact.png" alt="contact">
+                    <p>Contact</p>
+                </div>
+                <a  href="https://www.youtube.com/@JoeTheCoderYT"><div class="youtube flex items-center hover:bg-slate-400 cursor-pointer bg-[#0294ab] rounded-lg m-1 p-1 justify-center">
+                    <img class="h-4 w-5 mr-2" src="./assets/youtube.png" alt="youtube">
+                    <p>Youtube</p>
+                </div></a>
+            </div>
+            <hr class="mt-4 w-[90%]  m-3">
+            <div class="socials flex justify-evenly">
+                <a href="https://github.com/polojoe1"><img src="./assets/github.png" class="h-10"  alt=""></a>
+                <a href="https://www.linkedin.com/in/josephcoats501/"><img src="./assets/linkedin.png" class="h-10"  alt=""></a>
+            </div>
+            <!-- PANEL END -->
+            
+        </div>
+        <!-- CONTENT START -->
+            <!-- ABOUT -->
+            <div class="full-about pb-3 rounded-md h-fit max-h-[85%] overflow-scroll  border-[#1fa481] border-4  w-[90%] m-auto md:absolute md:left-80 mt-5 bg-white md:w-[60%]">
+                <h1 style="font-family: 'Vina Sans', sans-serif;" class="text-5xl pl-7 mt-7">Joseph <span class="text-[#1fa481]">Coats</span></h1>
+                <p class="text-slate-700 font-serif pl-10 mt-2 font-thin mb-3">Coats.Joseph30@gmail.com</p>
+                <hr class="w-[90%] m-auto bg-[#1fa481] h-[3px]">
+                <h2 style="font-family: 'Vina Sans', sans-serif;" class="text-3xl underline decoration-[#1fa481] text-center m-4">About</h2>
+                <p class="indent-10 text-sm font-medium md:text-base p-3 px-6 md:px-12">"Knowledge is power" is what I think about everyday. "Hard-work beats talent, when talent doesn't work hard", also helps be my own self-starter. I have been blessed with many talents, but I make sure I still work extremely hard to ensure none of my talents become stagnant or go to waste! 
+
+                    Thanks to the military I got an awesome opportunity to follow my dreams to become a Software Engineer, by attending a Full-stack development bootcamp, and gained more knowledge in such a short time frame that I could ever imagine!
+
+                    </p>
+                <p class="indent-10 px-6 text-sm font-medium md:text-base  md:px-12">I am a passionate coding instructor, a dilegent student, a military veteran, and a software engineer! Here's more about me from my coding instructor job from winning the teacher spotlight award! <span id="more" class="font-bold cursor-pointer text-teal-700 text-lg" href="">Here!</span></p>
+                <img class="h-72 m-auto rounded-full mt-3" src="./assets/tie.jpg" alt="tie">
+                
+            </div>
+            <!-- ABOUT END -->
+            <!-- CODEWIZARDS STUFF -->
+            <div class="wizards hidden pb-3 max-h-[85%] overflow-scroll rounded-md h-fit border-[#1fa481] border-4  w-[90%] m-auto md:absolute md:left-80 mt-5 bg-white md:w-[60%]">
+                <h2 style="font-family: 'Vina Sans', sans-serif;" class="text-3xl pl-7 mt-7">Teacher <span class="text-[#1fa481]">Spotlight</span></h2>
+                <hr class="w-[90%] m-auto bg-[#1fa481] h-[3px]">
+                <img class="h-fit m-auto" src="./assets/1.png" alt="1">
+                <img class="h-fit m-auto" src="./assets/2.png" alt="2">
+                <img class="h-fit m-auto" src="./assets/3.png" alt="3">
+                <img class="h-fit m-auto" src="./assets/4.png" alt="4">
+                <img class="h-fit m-auto" src="./assets/5.png" alt="5">
+            </div>
+            <!-- CODEWIZ END -->
+            <!-- RESUME/SKILLS -->
+            <div id="resume" class=" hidden pb-3 max-h-[85%] overflow-scroll rounded-md h-fit border-[#1fa481] border-4  w-[90%] m-auto md:absolute md:left-80 mt-5 bg-white md:w-[60%]">
+                <a id="download" href="./assets/CoatsJ_Resume.pdf" download><div class="flex mb-3 border-2 border-blue-300 justify-center m-auto  mt-7 bg-[#1fa481] rounded-full w-52 items-center">
+                    <p style="font-family: 'Vina Sans', sans-serif;" class=" text-white  text-3xl "  >Resume</p>
+                    <img src="./assets/downlaod.png" class="h-5 ml-2" alt="download">
+                </div></a>
+                <hr class="w-[90%] m-auto bg-[#1fa481] h-[3px]">
+                <h2 style="font-family: 'Vina Sans', sans-serif;" class="text-3xl text-cyan-800 pl-7 mt-7">Skills</h2>
+                <hr class="w-[10%] ml-7 bg-[#1fa481] h-[3px]">
+                <h2  class="text-xl text-slate-500 pl-7 font-mono mt-7">LANGUAGES</h2>
+                <div class="flex flex-wrap all-languages ml-12 items-center">
+                    <div class="flex items-center"><img src="./assets/python.png" alt="python" class="h-4 mr-2">
+                    <p class="mr-4">Python</p></div>
+                    <div class="flex items-center"><img src="./assets/java.png" alt="java" class="h-4 mr-2">
+                    <p class="mr-4">Java</p></div>
+                    <div class="flex items-center"><img src="./assets/js.png" alt="js" class="h-4 mr-2">
+                    <p class="mr-4">JavaScript</p></div>
+                    <div class="flex items-center"><img src="./assets/swift.png" alt="swift" class="h-4 mr-2">
+                    <p class="mr-4">Swift</p></div>
+                    <div class="flex items-center"><img src="./assets/SQL.png" alt="SQL" class="h-4 mr-2">
+                    <p class="mr-4">SQL</p></div>
+                    <div class="flex items-center"><img src="./assets/csharp.png" alt="csharp" class="h-4 mr-2">
+                    <p class="mr-4">C#</p></div>
+                    <div class="flex items-center"><img src="./assets/html.png" alt="html" class="h-4 mr-2">
+                    <p class="mr-4">HTML</p></div>
+                    <div class="flex items-center"><img src="./assets/css.png" alt="css" class="h-4 mr-2">
+                    <p class="mr-4">CSS</p></div>
+                </div>
+                <h2  class="text-xl text-slate-500 pl-7 font-mono mt-7">FRAMEWORKS</h2>
+                <div class="flex flex-wrap all-languages ml-12 items-center">
+                    <div class="flex items-center">
+                        <img src="./assets/jquery.png" alt="jquery" class="h-4 mr-2">
+                        <p class="mr-4">jQuery</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/react.png" alt="react" class="h-4 mr-2">
+                        <p class="mr-4">React</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/tailwind.png" alt="tailwind" class="h-4 mr-2">
+                        <p class="mr-4">Tailwind</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/bootstrap.png" alt="bootstrap" class="h-4 mr-2">
+                        <p class="mr-4">Bootstrap</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/flask.png" alt="flask" class="h-4 mr-2">
+                        <p class="mr-4">Flask</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/django.png" alt="django" class="h-4 mr-2">
+                        <p class="mr-4">Django</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/springboot.png" alt="springboot" class="h-4 mr-2">
+                        <p class="mr-4">Spring Boot</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/express.png" alt="express" class="h-4 mr-2">
+                        <p class="mr-4">Express</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/node.png" alt="node" class="h-4 mr-2">
+                        <p class="mr-4">Node JS</p>
+                    </div>
+                </div>
+                <h2  class="text-xl text-slate-500 pl-7 font-mono mt-7">DATABASES</h2>
+                <div class="flex flex-wrap all-languages ml-12 items-center">
+                    <div class="flex items-center">
+                        <img src="./assets/mysql.png" alt="mysql" class="h-4 mr-2">
+                        <p class="mr-4">mySQL </p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/mongodb.png" alt="mongodb" class="h-4 mr-2">
+                        <p class="mr-4">MongoDB</p>
+                    </div>
+                </div>
+                <h2  class="text-xl text-slate-500 pl-7 font-mono mt-7">VERSION CONTROL</h2>
+                <div class="flex flex-wrap all-languages ml-12 items-center">
+                    <div class="flex items-center">
+                        <img src="./assets/gblack.png" alt="gblack" class="h-4 mr-2">
+                        <p class="mr-4">Github </p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/git.png" alt="git" class="h-4 mr-2">
+                        <p class="mr-4">Git</p>
+                    </div>
+                </div>
+                <h2  class="text-xl text-slate-500 pl-7 font-mono mt-7">CERTIFICATIONS</h2>
+                <p class="text-md text-slate-700 pl-7  ml-2">Full Stack Web Development Certificate | Coding Dojo | 2022</p>
+                <h2  class="text-xl text-slate-500 pl-7 font-mono mt-7">EDUCATION</h2>
+                <p class="text-md text-slate-700 pl-7  ml-2">Associates of Computer Science | North Central Texas College | 2024</p>
+                <p class="text-md text-slate-700 pl-7  ml-2">Leadership Training School | United States Air Force | 2020</p>
+            </div>
+            <!-- RESUME END -->
+            <!-- CONTACT -->
+            <div id="contact" class=" hidden pb-3 px-1 max-h-[85%] overflow-x-hidden min-h-[540px] overflow-scroll rounded-md h-fit border-[#1fa481] border-4  w-[90%] m-auto md:absolute md:left-80 mt-5 bg-white md:w-[60%]">
+                <h2 style="font-family: 'Vina Sans', sans-serif;"  class="text-center text-3xl underline underline-offset-4 text-[#1fa481]   mt-7">CONTACT</h2>
+                <div class="flex h-full w-full  m-auto rounded-lg max-w-md items-center mt-2 justify-center bg-gradient-to-tr from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+                    <div class="flex items-center  flex-col py-14 justify-center w-full">
+                        <p id="success" style="font-family: 'Vina Sans', sans-serif;"  class="hidden text-center text-3xl mb-2 text-white">Thank You</p>
+                        <p id="error" style="font-family: 'Vina Sans', sans-serif;"  class="hidden text-center text-3xl mb-2 text-red-700">Error Try Again!</p>
+                        <p id="empty" style="font-family: 'Vina Sans', sans-serif;"  class="hidden text-center text-3xl mb-2 text-yellow-700">All Fields are REQUIRED</p>
+                        <form   class="bg-slate-100 p-5 w-80 rounded-lg inset-2 ">
+                            
+                            <div class="mb-4">
+                                <label for="name" class="block text-base font-semibold mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="w-full p-2 border rounded">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-base font-semibold mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full p-2 border rounded">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-base font-semibold mb-2">Message</label>
+                                <textarea id="message" name="message"  rows="4" class="w-full p-2 border rounded"></textarea>
+                            </div>
+                            <button id="subForm" type="submit" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-700">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- CONTACT END -->
+            <!-- PROJECTS -->
+            <div id="project" class=" hidden pb-3 max-h-[85%] overflow-scroll m-auto rounded-md h-fit px-3 md:px-9 overflow-x-hidden border-[#1fa481] border-4  w-[90%]  md:absolute md:left-80 mt-5 bg-white md:w-[60%]">
+                <h2 style="font-family: 'Vina Sans', sans-serif;"  class=" text-4xl underline underline-offset-4  text-[#1fa481]   mt-7">PROJECTS</h2>
+                <h2  class="text-xl text-slate-500  font-serif mt-7">MFORDVISUALARTS</h2>
+                <p class="font-light text-sm">Python, Flask, PayPal API, MySQL, JavaScript, Jinja2</p>
+                <img src="./assets/mford1.png" alt="mford1" class="block border-4 m-1 rounded-lg border-[#1fa481] ">
+                <div class="flex flex-wrap justify-center">
+                    <img src="./assets/mford2.png" alt="mford2" class="block h-96 border-4 m-1 rounded-lg border-[#1fa481]">
+                    <img src="./assets/mford3.png" alt="mford3" class="block h-96 border-4 m-1 rounded-lg border-[#1fa481]">
+
+                </div>
+                <p class="font-light text-sm mt-2">
+                    MFordVisualArts is a full-stack, mobile friendly, web application I made for a client. It is a shopping website for art the client has designed. The Paypal API is used for safe and seamless transactions.
+                    Created an admin portal for client/potential employees that show how much traffic the website has and sales. Easy to use orders portal so employees know when and where to ship merchandise.
+                    
+                </p>
+                <a class="flex justify-center w-full text-center my-2" href="http://www.mfordvisualarts.com">
+                    <div class="flex justify-center border-2 border-slate-800 p-1 w-fit items-center text-lg font-semibold">
+                        <p>LIVE</p>
+                        <img src="./assets/link.png" alt="link" class="h-4 ml-2">
+                        
+                    </div>
+                </a>
+                <h2  class="text-xl text-slate-500  font-serif mt-7">COMPUTER WORDLE</h2>
+                <p class="font-light text-sm">JavaScript, HTML, CSS, Dictionary API, jQuery</p>
+                <img src="./assets/game1.png" alt="game1" class="block border-4 m-1 rounded-lg border-[#1fa481] ">
+                <p class="font-light text-sm mt-2">Computer Wordle is my own twist to the Wordle game. You have an unlimited amount of guesses and its all on your very own computer. You have google to help you research words. This helps people like me lengthen my vocabulary in a fun exciting way. Your google has light and dark mode. If you give up on guessing you could always click the solve button, then refresh to try again! This was a JavaScript heavy project!</p>
+                <p class="text-center font-semibold">Not yet mobile friendly!</p>
+                <div class="flex justify-center items-center">
+                    <a class="flex justify-end w-full mr-1 text-center my-2" href="https://github.com/polojoe1/computerWordle">
+                        <div class="flex justify-center border-2 border-slate-800 p-1 w-fit items-center text-lg font-semibold">
+                            <p>GITHUB</p>
+                            <img src="./assets/gblack.png" alt="link" class="h-4 ml-2">
+                            
+                        </div>
+                    </a>
+                    <a class="flex justify-start w-full ml-1 text-center my-2" href="https://polojoe1.github.io/computerWordle/">
+                        <div class="flex justify-center border-2 border-slate-800 p-1 w-fit items-center text-lg font-semibold">
+                            <p>LIVE</p>
+                            <img src="./assets/link.png" alt="link" class="h-4 ml-2">
+                            
+                        </div>
+                    </a>
+                </div>
+                <h2  class="text-xl text-slate-500  font-serif mt-7">ROOMMATES CLONE</h2>
+                <p class="font-light text-sm">React, Tailwind, JavaScript(ES6), Teaching</p>
+                <img src="./assets/rm1.png" alt="rm1" class="block border-4 m-1 rounded-lg border-[#1fa481] ">
+                <img src="./assets/rm2.png" alt="rm2" class="block border-4 m-auto rounded-lg h-96  border-[#1fa481] ">
+                <p class="font-light text-sm mt-2">A roomates website clone using React and Tailwind CSS! I have this recorded live on my youtube so you can code along with me! It's visually pleasing and mobile friendly!</p>
+                <div class="flex justify-evenly items-center">
+                    <a class="flex justify-center w-full mr-1 text-center my-2" href="https://github.com/polojoe1/youtube-tutorial-roommates">
+                        <div class="flex justify-center border-2 border-slate-800 p-1 w-fit items-center text-lg font-semibold">
+                            <p>GITHUB</p>
+                            <img src="./assets/gblack.png" alt="link" class="h-4 ml-2">
+                            
+                        </div>
+                    </a>
+                    <a class="flex justify-center w-full ml-1 text-center my-2" href="https://polojoe1.github.io/youtube-tutorial-roommates/">
+                        <div class="flex justify-center border-2 border-slate-800 p-1 w-fit items-center text-lg font-semibold">
+                            <p>LIVE</p>
+                            <img src="./assets/link.png" alt="link" class="h-4 ml-2">
+                            
+                        </div>
+                    </a>
+                    <a class="flex justify-center w-full ml-1 text-center my-2" href="https://www.youtube.com/watch?v=t3Ejme5r8mg">
+                        <div class="flex justify-center border-2 border-slate-800 p-1 w-fit items-center text-lg font-semibold">
+                            <p>VIDEO</p>
+                            <img src="./assets/link.png" alt="link" class="h-4 ml-2">
+                            
+                        </div>
+                    </a>
+                </div>
+                <h2  class="text-xl text-slate-500  font-serif mt-7">FACESPACE</h2>
+                <p class="font-light text-sm">Java, Spring Boot, MySQL, JavaScript, JSP, JSTL</p>
+                <img src="./assets/fs1.png" alt="fs1" class="block border-4 m-1 rounded-lg border-[#1fa481] ">
+                <img src="./assets/fs2.png" alt="fs2" class="block border-4 m-1 rounded-lg border-[#1fa481] ">
+                <img src="./assets/fs3.png" alt="fs3" class="block border-4 m-1 rounded-lg border-[#1fa481] ">
+                <p class="font-light text-sm mt-2">FaceSpace is a social media clone I created as my first project in my coding bootcamp. It isn't pretty on the front-end, but I was amazed on what I was able to accomplish on the backend using Java's ORM. Things like search queries and data joins were difficult as a beginner, but I was able to get all the logic working when it comes to adding friends, removing friends, searching for users, messaging users, liking post, commenting on post, and more! This project solidified my knowledge on conditional rendering, because I was a beginner, I didn't have the most efficient functions.</p>
+                <div class="flex justify-center items-center">
+                    <a class="flex justify-center w-full mr-1 text-center my-2" href="https://github.com/polojoe1/faceSpace/tree/main">
+                        <div class="flex justify-center border-2 border-slate-800 p-1 w-fit items-center text-lg font-semibold">
+                            <p>GITHUB</p>
+                            <img src="./assets/gblack.png" alt="link" class="h-4 ml-2">
+                            
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- PROJECTS END -->
+    </div>
+    <script>
+        $(document).ready(()=>{
+            $('#subForm').on('click ',(e)=>{
+                e.preventDefault();
+                var data = {
+                    service_id: 'service_n7g5q8m',
+                    template_id: 'template_nni8uxo',
+                    user_id: 'coB0c1m05Tf4j2jKx',
+                    template_params: {
+                        'name': $('#name').val(),
+                        'message': $('#message').val(),
+                        'email':$('#email').val()
+                    }
+                };
+                if($('#email').val()===""){
+                    $("#empty").fadeIn(1100)
+                    return
+                }
+                if($('#message').val()===""){
+                    $("#empty").fadeIn(1100)
+                    return
+                }
+                if($('#name').val()===""){
+                    $("#empty").fadeIn(1100)
+                    return
+                }
+                $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+                    type: 'POST',
+                    data: JSON.stringify(data),
+                    contentType: 'application/json'
+                }).done(function() {
+                    $("#empty").hide()
+                    $("error").hide()
+                    $("#success").fadeIn(1100)
+                }).fail(function(error) {
+                    $("#success").hide()
+                    $('#empty').hide()
+                    $("#error").fadeIn(1100)
+                });
+            })
+            let theMenu = false;
+            $('.hamburger').click(()=>{
+                if(theMenu){
+                    theMenu=!theMenu;
+                    
+                    $(".theMenu").slideUp()
+                    
+                }
+                else{
+                    theMenu=!theMenu;
+                    $(".theMenu").slideDown()
+                }
+            })
+            $(window).resize(()=>{
+                theMenu= false;
+                $('.theMenu').hide()
+        
+            })
+            let options = [$(".project"),$(".about"),$(".resume"),$('.contact')]
+            let about = true;
+            let project = false;
+            let resume = false;
+            let contact = false;
+            let wizards = false;
+            
+            $(".project").click(()=>{
+                for(let i=0;i<options.length;i++){
+                    options[i].removeClass("bg-blue-500")
+                    options[i].addClass("bg-[#0294ab]")
+                }
+                $(".project").addClass("bg-blue-500")
+                if(theMenu){
+                    theMenu=!theMenu;
+                    
+                    $(".theMenu").slideUp()
+                    
+                }
+                if(wizards){
+                    wizards=false;
+                    project=true;
+                    $('.wizards').slideUp()
+                    setTimeout(()=>{
+                        $('#project').slideDown()
+                    
+                },400)
+                }
+                if(resume){
+                    resume=false;
+                    project=true;
+                    $('#resume').slideUp()
+                    setTimeout(()=>{
+                        $('#project').slideDown()
+                    
+                },400)}
+                if(contact){
+                    contact=false;
+                    project=true;
+                    $('#contact').slideUp()
+                    setTimeout(()=>{
+                        $('#project').slideDown()
+                    
+                },400)
+                
+                }
+                if(about){
+                    about=false;
+                    project=true;
+                    $('.full-about').slideUp()
+                    setTimeout(()=>{
+                        $('#project').slideDown()
+                    
+                },400)
+                }
+            })
+            $(".about").click(()=>{
+                for(let i=0;i<options.length;i++){
+                    options[i].removeClass("bg-blue-500")
+                    options[i].addClass("bg-[#0294ab]")
+                }
+                if(theMenu){
+                    theMenu=!theMenu;
+                    
+                    $(".theMenu").slideUp()
+                    
+                }
+                if(wizards){
+                    wizards=false;
+                    about=true;
+                    $('.wizards').slideUp()
+                    setTimeout(()=>{
+                        $('.full-about').slideDown()
+                    
+                },400)
+                }
+                if(resume){
+                    resume=false;
+                    about=true;
+                    $('#resume').slideUp()
+                    setTimeout(()=>{
+                        $('.full-about').slideDown()
+                    
+                },400)}
+                if(project){
+                    project=false;
+                    about=true;
+                    $('#project').slideUp()
+                    setTimeout(()=>{
+                        $('.full-about').slideDown()
+                    
+                },400)}
+                if(contact){
+                    contact=false;
+                    about=true;
+                    $('#contact').slideUp()
+                    setTimeout(()=>{
+                        $('.full-about').slideDown()
+                    
+                },400)
+                
+                }
+                
+                $(".about").addClass("bg-blue-500")
+            })
+        
+            $(".resume").click(()=>{
+                for(let i=0;i<options.length;i++){
+                    options[i].removeClass("bg-blue-500")
+                    options[i].addClass("bg-[#0294ab]")
+                }
+                $(".resume").addClass("bg-blue-500")
+                if(theMenu){
+                    theMenu=!theMenu;
+                    
+                    $(".theMenu").slideUp()
+                    
+                }
+                if(wizards){
+                    wizards=false;
+                    about=false;
+                    resume=true;
+                    $('.wizards').slideUp()
+                    setTimeout(()=>{
+                        $('#resume').slideDown()
+                    
+                },400)
+                
+                }
+                if(about){
+                    about=false;
+                    resume=true;
+                    $('.full-about').slideUp()
+                    setTimeout(()=>{
+                        $('#resume').slideDown()
+                    
+                },400)
+                }
+                if(contact){
+                    contact=false;
+                    resume=true;
+        
+                    $('#contact').slideUp()
+                    setTimeout(()=>{
+                        $('#resume').slideDown()
+                    
+                },400)
+                }
+                if(project){
+                    project=false;
+                    resume=true;
+        
+                    $('#project').slideUp()
+                    setTimeout(()=>{
+                        $('#resume').slideDown()
+                    
+                },400)
+                }
+                
+            })
+            $(".contact").click(()=>{
+                for(let i=0;i<options.length;i++){
+                    options[i].removeClass("bg-blue-500")
+                    options[i].addClass("bg-[#0294ab]")
+                }
+                if(theMenu){
+                    theMenu=!theMenu;
+                    
+                    $(".theMenu").slideUp()
+                    
+                }
+                if(wizards){
+                    wizards=false;
+                    
+                    contact=true;
+                    $('.wizards').slideUp()
+                    setTimeout(()=>{
+                        $('#contact').slideDown()
+                    
+                },400)
+                
+                
+                }
+                if(about){
+                    about=false;
+                    
+                    contact=true;
+                    $('.full-about').slideUp()
+                    setTimeout(()=>{
+                        $('#contact').slideDown()
+                    
+                },400)}
+                if(resume){
+                    resume=false;
+                    
+                    contact=true;
+                    $('#resume').slideUp()
+                    setTimeout(()=>{
+                        $('#contact').slideDown()
+                    
+                },400)}
+                if(project){
+                    project=false;
+                    
+                    contact=true;
+                    $('#project').slideUp()
+                    setTimeout(()=>{
+                        $('#contact').slideDown()
+                    
+                },400)}
+                $(".contact").addClass("bg-blue-500")
+                
+            })
+        
+            $("#more").click(()=>{
+                $('.full-about').slideUp()
+                setTimeout(()=>{
+                    $('.wizards').slideDown()
+                },400)
+                wizards=true;
+                about=false;
+            })
+        })
+    </script>
+</body>
+</html>
